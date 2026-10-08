@@ -1,3 +1,7 @@
+<p align="center">
+  <a href="https://fastify.dev"><img src="https://raw.githubusercontent.com/fastify/graphics/HEAD/fastify-landscape-outlined.svg" alt="Fastify" width="300" /></a>
+</p>
+
 # fastify-ata-starter
 
 A Fastify API where one JSON Schema gives the request validation, the TypeScript types of the handler's input and reply, and the OpenAPI document. Nothing is converted and nothing is generated: Fastify routes already take JSON Schema, [fastify-ata](https://github.com/ata-core/fastify-ata) validates with it through [ata-validator](https://github.com/ata-core/ata-validator), the type provider reads the types off it, and `@fastify/swagger` writes it into the document as it is.
