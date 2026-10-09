@@ -45,6 +45,10 @@ The 17 ms is fastify-ata loading and compiling the two schemas at startup. For a
 
 `test/app.test.ts`: a valid body is accepted with a typed reply, an invalid one gets the 400 with the violations named, and the document carries the schema as written, `description`, `format` and `minLength` included.
 
+## The same idea elsewhere
+
+[hono-ata-starter](https://github.com/ata-core/hono-ata-starter) does this on Hono for Cloudflare Workers, compiled ahead of time, and [mcp-ata-workers-starter](https://github.com/ata-core/mcp-ata-workers-starter) is an MCP server on Workers whose tool schemas are compiled the same way.
+
 ## License
 
 MIT
